@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>ACAPRA - Proteção Animal de Brusque</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="menuLateral" class="side-menu">
+  <span class="fechar-btn" onclick="fecharMenu()">&times;</span>
+  <a href="index.html">Início</a>
+  <a href="sobre.html">Sobre Nós</a>
+  <a href="noticias.html">Notícias</a>
+  <a href="historias.html">Histórias de Sucesso</a>
+  <a href="doacao.html">Como Ajudar</a>
+  <a href="maus-tratos.html">Denuncie Maus-Tratos</a>
+  <a href="contato.html">Contato</a>
+</div>
+
+<header>
+  <div class="icon" onclick="abrirMenu()">&#9776;</div>
+  <div class="logo-header">
+    <a href="index.html"><img src="Imagens/AcapraLogo.PNG" alt="Logo ACAPRA"></a>
+  </div>
+  <div class="menu-direito">
+    <a href="FormularioAcapra.html" class="btn-header">Quero Adotar!</a>
+  </div>
+</header>
+
+<main>
+  <div class="container sobre-container">
+    <img src="Imagens/2.png" alt="Voluntários da ACAPRA" class="esquerda-img">
+    <div class="sobre">
+      <h3>Quem Somos</h3>
+      <p>
+        A ACAPRA é uma ONG dedicada à proteção animal na região de Brusque. Com muito amor e esforço, contamos com a ajuda de voluntários para realizar resgates, arrecadar recursos e oferecer lares temporários aos animais que foram abandonados ou sofreram maus-tratos.
+      </p>
+      <a href="sobre.html" class="btn">Leia mais sobre nossa história</a>
+    </div>
+  </div>
+
+  <div class="container-galeria">
+    <h2>Anjinhos esperando um lar</h2>
+    <div class="galeria">
+      <div class="animal-card"><img src="Imagens/3.png" alt="Animal para adoção 1"><span>Frajola</span></div>
+      <div class="animal-card"><img src="Imagens/4.png" alt="Animal para adoção 2"><span>Caramelo</span></div>
+      <div class="animal-card"><img src="Imagens/5.png" alt="Animal para adoção 3"><span>Luna</span></div>
+      <div class="animal-card"><img src="Imagens/6.png" alt="Animal para adoção 4"><span>Thor</span></div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-apoio">
+      <p>Apoio:</p>
+      <span>UNIFEBE</span>
+    </div>
+    <div class="footer-info">
+      <p>© 2025 ACAPRA. Todos os direitos reservados.</p>
+      <p>Associação Brusquense de Proteção aos Animais</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function abrirMenu() {
+    document.getElementById("menuLateral").style.width = "250px";
+  }
+
+  function fecharMenu() {
+    document.getElementById("menuLateral").style.width = "0";
+  }
+</script>
+
+</body>
+</html>
