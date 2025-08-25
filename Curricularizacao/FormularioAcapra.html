@@ -6,35 +6,73 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="menu-icon">☰</div>
-      <div class="logo">
-        <img src="Imagens/AcapraLogo.PNG" alt="ACAPRA">
-      </div>
-      <div class="usar-icon">👤</div>
-    </header>
 
-    <main>
-      <h1>Formulário:</h1>
-      <div class="form-caixa">
-        <ol>
-          <li>Qual animal você tem interesse em adotar?</li>
-          <li>Qual telefone para contato?</li>
-          <li>Todos da sua residência concordam com a adoção?</li>
-          <li>Você tem outros animais? Se sim, quantos e quais? <br> São castrados e vacinados?</li>
-          <li>Você mora em casa ou apartamento? Próprio ou alugado?</li>
-          <li>Qual seu endereço completo? <br>Com rua, CEP, número da casa e ponto de referência.</li>
-          <li>Qual a sua renda?</li>
-          <li>A sua residência tem telas?</li>
-          <li>Você deixaria o gato ter acesso à rua? Dar "voltinhas"?</li>
-          <li>Você tem condições físicas, mentais e financeiras de manter um animal? <br>Uma boa ração? Visitas ao veterinário? Castração? Passeios?</li>
-          <li>Existe uma taxa de adoção colaborativa de R$30,00. <br>Você concorda em contribuir?</li>
-          <li>A castração e vacinação do animal é OBRIGATÓRIA, você concorda com isso?</li>
-        </ol>
-      </div>
-      <button class="responder">Responder as questões</button>
-    </main>
-  </div>
+<div id="menuLateral" class="side-menu">
+    <span class="fechar-btn" onclick="fecharMenu()">&times;</span>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre Nós</a>
+    <a href="noticias.html">Notícias</a>
+    <a href="historias.html">Histórias de Sucesso</a>
+    <a href="doacao.html">Como Ajudar</a>
+    <a href="maus-tratos.html">Denuncie Maus-Tratos</a>
+    <a href="contato.html">Contato</a>
+</div>
+
+<header>
+    <div class="icon" onclick="abrirMenu()">&#9776;</div>
+    <div class="logo-header">
+        <a href="index.html"><img src="Imagens/AcapraLogo.PNG" alt="Logo ACAPRA"></a>
+    </div>
+    <div class="menu-direito">
+        <a href="FormularioAcapra.html" class="btn-header">Quero Adotar!</a>
+    </div>
+</header>
+
+<main>
+    <div class="container-formulario">
+        <h1>Formulário de Adoção</h1>
+        <p class="form-instructions">
+            Para dar início ao processo de adoção, por favor, copie as perguntas abaixo e nos envie suas respostas através do nosso <a href="#">Whatsapp</a> ou <a href="mailto:exemplo@gmail.com">E-mail</a>.
+        </p>
+        <div class="form-caixa">
+            <ol>
+                <li>Qual animal você tem interesse em adotar?</li>
+                <li>Qual telefone para contato?</li>
+                <li>Todos da sua residência concordam com a adoção?</li>
+                <li>Você tem outros animais? Se sim, quantos e quais? São castrados e vacinados?</li>
+                <li>Você mora em casa ou apartamento? Próprio ou alugado?</li>
+                <li>Qual seu endereço completo? (Rua, CEP, número, ponto de referência)</li>
+                <li>A sua residência tem telas de proteção nas janelas e sacadas?</li>
+                <li>Você tem condições e ciência dos custos para manter um animal? (Ração de qualidade, veterinário, vacinas, etc.)</li>
+                <li>Existe uma taxa de adoção colaborativa de R$30,00. Você concorda em contribuir?</li>
+                <li>A castração do animal na idade certa é OBRIGATÓRIA. Você se compromete com isso?</li>
+            </ol>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-apoio">
+            <p>Apoio:</p>
+            <span>UNIFEBE</span>
+        </div>
+        <div class="footer-info">
+            <p>© 2025 ACAPRA. Todos os direitos reservados.</p>
+            <p>Associação Brusquense de Proteção aos Animais</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function abrirMenu() {
+        document.getElementById("menuLateral").style.width = "250px";
+    }
+
+    function fecharMenu() {
+        document.getElementById("menuLateral").style.width = "0";
+    }
+</script>
+
 </body>
 </html>
