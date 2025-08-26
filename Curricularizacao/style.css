@@ -288,3 +288,283 @@ footer {
   font-weight: bold;
   font-size: 1.2em;
 }
+
+/* --- PÁGINAS INTERNAS (Sobre, Notícias, etc.) --- */
+.container-pagina {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.container-pagina p {
+  line-height: 1.7;
+  font-size: 1.1em;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+.missao-container {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.missao-item {
+  flex: 1;
+  min-width: 280px;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-left: 4px solid #FF5722;
+}
+
+.missao-item h3 {
+  text-align: left;
+  margin-top: 0;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.stat-item {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  flex-basis: 180px; /* Base de largura para cada item */
+  flex-grow: 1;
+  border-bottom: 4px solid #E64A19;
+}
+
+.stat-item .numero {
+  display: block;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #E64A19;
+}
+
+.stat-item .descricao {
+  font-size: 1em;
+  color: #555;
+}
+
+/* --- PÁGINA DE NOTÍCIAS (noticias.html) --- */
+.noticias-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.noticia-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.noticia-card:hover {
+  transform: translateY(-5px);
+}
+
+.noticia-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.noticia-conteudo {
+  padding: 1.5rem;
+}
+
+.noticia-conteudo h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.7em;
+  text-align: left;
+}
+
+.noticia-conteudo h2 a {
+  text-decoration: none;
+  color: #333;
+}
+
+.noticia-conteudo h2 a:hover {
+  color: #E64A19;
+}
+
+.noticia-meta {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.noticia-conteudo p {
+  text-align: left;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* --- PÁGINA HISTÓRIAS DE SUCESSO (historias.html) --- */
+.historias-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.historia-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.historia-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+
+.historia-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.historia-card h3 {
+  margin: 1rem 1rem 0.5rem 1rem;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.historia-card p {
+  margin: 0 1.2rem 1rem 1.2rem;
+  flex-grow: 1; /* Faz os cards terem a mesma altura na mesma linha */
+  text-align: left;
+}
+
+.historia-card blockquote {
+  background-color: #fffde7;
+  border-left: 4px solid #FFC107;
+  margin: 0 1.2rem 1.2rem 1.2rem;
+  padding: 0.8rem;
+  font-style: italic;
+  color: #555;
+  font-size: 0.95em;
+}
+
+/* --- PÁGINA COMO AJUDAR (doacao.html) --- */
+.ajuda-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.ajuda-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  padding: 1.5rem 2rem;
+  border-top: 5px solid #FF5722;
+  display: flex;
+  flex-direction: column;
+}
+
+.ajuda-card h3 {
+  text-align: left;
+  margin-top: 0;
+  font-size: 1.6em;
+}
+
+.ajuda-card p, .ajuda-card ul {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.ajuda-card ul {
+  padding-left: 20px;
+  line-height: 1.7;
+}
+
+.ajuda-card .pix-img {
+  max-width: 180px;
+  width: 100%;
+  display: block;
+  margin: 1rem auto;
+}
+
+.ajuda-card strong {
+  color: #333;
+  font-size: 1.1em;
+  word-wrap: break-word; /* Garante que a chave PIX não vai quebrar o layout */
+}
+
+/* --- PÁGINA MAUS-TRATOS (maus-tratos.html) --- */
+.lista-info {
+  text-align: left;
+  font-size: 1.1em;
+  line-height: 1.8;
+  padding-left: 25px;
+}
+
+.denuncia-passos {
+  margin-top: 2rem;
+}
+
+.passo-card {
+  background-color: #fff;
+  border-left: 5px solid #c9302c; /* Vermelho para alerta */
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.passo-card h3 {
+  margin-top: 0;
+  text-align: left;
+  color: #c9302c;
+  font-size: 1.6em;
+}
+
+.passo-card p, .passo-card ul {
+  text-align: left;
+}
+
+.passo-card ul {
+  padding-left: 20px;
+}
+
+.alerta-info {
+  background-color: #fffde7;
+  border-left: 5px solid #FFC107;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.alerta-info h3 {
+  margin-top: 0;
+  text-align: left;
+  color: #8a6d3b;
+}
+
+.alerta-info p {
+  text-align: left;
+  margin-bottom: 0;
+}
