@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Como Ajudar - ACAPRA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="menuLateral" class="side-menu">
+  <span class="fechar-btn" onclick="fecharMenu()">&times;</span>
+  <a href="index.html">Início</a>
+  <a href="sobre.html">Sobre Nós</a>
+  <a href="noticias.html">Notícias</a>
+  <a href="historias.html">Histórias de Sucesso</a>
+  <a href="doacao.html">Como Ajudar</a>
+  <a href="maus-tratos.html">Denuncie Maus-Tratos</a>
+  <a href="contato.html">Contato</a>
+</div>
+
+<header>
+  <div class="icon" onclick="abrirMenu()">&#9776;</div>
+  <div class="logo-header">
+    <a href="index.html"><img src="Imagens/AcapraLogo.PNG" alt="Logo ACAPRA"></a>
+  </div>
+  <div class="menu-direito">
+    <a href="FormularioAcapra.html" class="btn-header">Quero Adotar!</a>
+  </div>
+</header>
+
+<main>
+  <div class="container-pagina">
+    <h1>Sua Ajuda Transforma Vidas</h1>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem auto;">
+      A ACAPRA é uma organização sem fins lucrativos e todo o nosso trabalho depende da generosidade de pessoas como você. Cada doação, seja de tempo, dinheiro ou suprimentos, faz uma enorme diferença na vida de nossos animais. Veja como você pode ajudar:
+    </p>
+    
+    <div class="ajuda-container">
+      
+      <article class="ajuda-card">
+        <h3>💰 Faça uma Doação via PIX</h3>
+        <p>A doação em dinheiro é a forma mais rápida e direta de nos ajudar a cobrir custos urgentes como tratamentos veterinários, medicamentos, cirurgias e exames. Qualquer valor é bem-vindo!</p>
+        <img class="pix-img" src="Imagens/pix.webp" alt="QR Code para doação PIX">
+        <p><strong>Chave PIX (CNPJ):</strong><br>03.772.251.0001-82</p>
+      </article>
+
+      <article class="ajuda-card">
+        <h3>🦴 Doe Ração e Suprimentos</h3>
+        <p>Estamos sempre precisando de itens essenciais para manter nossos animais saudáveis e nosso ambiente limpo. Os itens que mais precisamos são:</p>
+        <ul>
+          <li>Ração para cães e gatos (filhotes e adultos)</li>
+          <li>Areia sanitária para gatos</li>
+          <li>Vermífugos e anti-pulgas</li>
+          <li>Produtos de limpeza (água sanitária, desinfetante)</li>
+          <li>Caminhas, cobertores e toalhas usadas</li>
+        </ul>
+        <p>Entre em contato para saber nossos pontos de coleta!</p>
+      </article>
+
+      <article class="ajuda-card">
+        <h3>❤️️ Seja Voluntário</h3>
+        <p>Seu tempo e seu talento são doações preciosas! Estamos sempre em busca de pessoas comprometidas para nos ajudar em diversas frentes:</p>
+        <ul>
+          <li><strong>Lar Temporário:</strong> Acolha um animal em sua casa até que ele seja adotado.</li>
+          <li><strong>Eventos:</strong> Ajude em nossas feiras de adoção.</li>
+          <li><strong>Transporte:</strong> Leve animais para consultas e exames.</li>
+          <li><strong>Divulgação:</strong> Ajude a compartilhar nossos casos nas redes sociais.</li>
+        </ul>
+        <a href="contato.html" class="btn">Fale Conosco para ser voluntário</a>
+      </article>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-apoio">
+      <p>Apoio:</p>
+      <span>UNIFEBE</span>
+    </div>
+    <div class="footer-info">
+      <p>© 2025 ACAPRA. Todos os direitos reservados.</p>
+      <p>Associação Brusquense de Proteção aos Animais</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function abrirMenu() {
+    document.getElementById("menuLateral").style.width = "250px";
+  }
+
+  function fecharMenu() {
+    document.getElementById("menuLateral").style.width = "0";
+  }
+</script>
+
+</body>
+</html>
