@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre Nós - ACAPRA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="menuLateral" class="side-menu">
+  <span class="fechar-btn" onclick="fecharMenu()">&times;</span>
+  <a href="index.html">Início</a>
+  <a href="sobre.html">Sobre Nós</a>
+  <a href="noticias.html">Notícias</a>
+  <a href="historias.html">Histórias de Sucesso</a>
+  <a href="doacao.html">Como Ajudar</a>
+  <a href="maus-tratos.html">Denuncie Maus-Tratos</a>
+  <a href="contato.html">Contato</a>
+</div>
+
+<header>
+  <div class="icon" onclick="abrirMenu()">&#9776;</div>
+  <div class="logo-header">
+    <a href="index.html"><img src="Imagens/AcapraLogo.PNG" alt="Logo ACAPRA"></a>
+  </div>
+  <div class="menu-direito">
+    <a href="FormularioAcapra.html" class="btn-header">Quero Adotar!</a>
+  </div>
+</header>
+
+<main>
+  <div class="container-pagina">
+    <h1>Nossa História</h1>
+    <p>
+      A ACAPRA (Associação Brusquense de Proteção aos Animais) nasceu em 2015 do sonho de um pequeno grupo de amigos que não podiam mais ignorar o número crescente de animais abandonados e em situação de risco nas ruas de Brusque. O que começou com resgates esporádicos e lares temporários improvisados, rapidamente se transformou em um movimento organizado, movido pela paixão e pelo desejo de dar uma segunda chance a quem não pode pedir ajuda.
+    </p>
+    <p>
+      Hoje, somos uma organização sem fins lucrativos que depende inteiramente de doações e do trabalho incansável de nossos voluntários. Cada resgate, cada feira de adoção e cada animal recuperado é uma vitória para nós e para a comunidade.
+    </p>
+
+    <div class="missao-container">
+        <div class="missao-item">
+            <h3>Missão</h3>
+            <p>Resgatar, recuperar e encontrar lares seguros e amorosos para animais em situação de vulnerabilidade, promovendo a posse responsável e o controle populacional através da castração.</p>
+        </div>
+        <div class="missao-item">
+            <h3>Visão</h3>
+            <p>Ser uma referência no bem-estar animal em nossa região, contribuindo para uma comunidade onde todos os animais sejam tratados com respeito, dignidade e compaixão.</p>
+        </div>
+    </div>
+    
+    <h2>Nosso Impacto em Números (FICTÍCIOS)</h2>
+    <div class="stats-container">
+      <div class="stat-item">
+        <span class="numero">+1.200</span>
+        <span class="descricao">Animais Resgatados</span>
+      </div>
+      <div class="stat-item">
+        <span class="numero">+950</span>
+        <span class="descricao">Adoções Realizadas</span>
+      </div>
+      <div class="stat-item">
+        <span class="numero">+5 Ton</span>
+        <span class="descricao">Ração Arrecadada</span>
+      </div>
+      <div class="stat-item">
+        <span class="numero">40+</span>
+        <span class="descricao">Voluntários Ativos</span>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-apoio">
+      <p>Apoio:</p>
+      <span>UNIFEBE</span>
+    </div>
+    <div class="footer-info">
+      <p>© 2025 ACAPRA. Todos os direitos reservados.</p>
+      <p>Associação Brusquense de Proteção aos Animais</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function abrirMenu() {
+    document.getElementById("menuLateral").style.width = "250px";
+  }
+
+  function fecharMenu() {
+    document.getElementById("menuLateral").style.width = "0";
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Notícias - ACAPRA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="menuLateral" class="side-menu">
+  <span class="fechar-btn" onclick="fecharMenu()">&times;</span>
+  <a href="index.html">Início</a>
+  <a href="sobre.html">Sobre Nós</a>
+  <a href="noticias.html">Notícias</a>
+  <a href="historias.html">Histórias de Sucesso</a>
+  <a href="doacao.html">Como Ajudar</a>
+  <a href="maus-tratos.html">Denuncie Maus-Tratos</a>
+  <a href="contato.html">Contato</a>
+</div>
+
+<header>
+  <div class="icon" onclick="abrirMenu()">&#9776;</div>
+  <div class="logo-header">
+    <a href="index.html"><img src="Imagens/AcapraLogo.PNG" alt="Logo ACAPRA"></a>
+  </div>
+  <div class="menu-direito">
+    <a href="FormularioAcapra.html" class="btn-header">Quero Adotar!</a>
+  </div>
+</header>
+
+<main>
+  <div class="container-pagina">
+    <h1>Últimas Notícias e Eventos</h1>
+    
+    <div class="noticias-container">
+      
+      <article class="noticia-card">
+        <img src="Imagens/feira.jpeg" alt="Cachorros e gatos em uma feira de adoção">
+        <div class="noticia-conteudo">
+          <h2><a href="#">Sucesso na Feira de Adoção! Mais de 15 animais encontram um novo lar</a></h2>
+          <div class="noticia-meta">
+            <span>Publicado em 23 de agosto de 2025</span> | <span>Categoria: Eventos</span>
+          </div>
+          <p>Nossa última feira de adoção, realizada no último sábado, foi um sucesso absoluto! Graças à ajuda de nossos voluntários e à generosidade da comunidade, conseguimos encontrar lares amorosos para 10 cães e 5 gatos. Agradecemos a todos que compareceram, adotaram ou ajudaram a divulgar...</p>
+          <a href="#" class="btn">Leia Mais</a>
+        </div>
+      </article>
+
+      <article class="noticia-card">
+        <img src="Imagens/racao.jpeg" alt="Sacos de ração empilhados">
+        <div class="noticia-conteudo">
+          <h2><a href="#">Participe da nossa Campanha de Arrecadação de Ração para o Inverno</a></h2>
+          <div class="noticia-meta">
+            <span>Publicado em 15 de agosto de 2025</span> | <span>Categoria: Campanhas</span>
+          </div>
+          <p>Com a chegada do frio, o consumo de ração em nosso abrigo aumenta. Para garantir que nossos anjinhos continuem bem alimentados e saudáveis, estamos lançando a campanha de inverno. Doe qualquer quantidade em um de nossos pontos de coleta ou via PIX...</p>
+          <a href="#" class="btn">Leia Mais</a>
+        </div>
+      </article>
+
+      <article class="noticia-card">
+        <img src="Imagens/carinho.jpg" alt="Uma pessoa fazendo carinho em um gato no colo">
+        <div class="noticia-conteudo">
+          <h2><a href="#">Seja um Lar Temporário: Um ato de amor que salva vidas</a></h2>
+          <div class="noticia-meta">
+            <span>Publicado em 05 de agosto de 2025</span> | <span>Categoria: Voluntariado</span>
+          </div>
+          <p>Estamos com nossa capacidade de abrigo no limite e precisamos urgentemente de lares temporários para acolher novos resgates, especialmente filhotes e animais em recuperação. Ser um lar temporário significa oferecer um espaço seguro e carinho por um período determinado...</p>
+          <a href="#" class="btn">Leia Mais</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-apoio">
+      <p>Apoio:</p>
+      <span>UNIFEBE</span>
+    </div>
+    <div class="footer-info">
+      <p>© 2025 ACAPRA. Todos os direitos reservados.</p>
+      <p>Associação Brusquense de Proteção aos Animais</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function abrirMenu() {
+    document.getElementById("menuLateral").style.width = "250px";
+  }
+
+  function fecharMenu() {
+    document.getElementById("menuLateral").style.width = "0";
+  }
+</script>
+
+</body>
+</html>
